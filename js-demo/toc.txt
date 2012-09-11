@@ -5,6 +5,8 @@
   - Higher Order Functions
   - Objekte
 
+weitere Details: http://www.yuiblog.com/crockford/
+
 - Underscore.js
   - map, each
   
