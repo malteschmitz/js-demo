@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Underscore.js</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="libs/underscore.js"></script>
+</head>
+<body>
+<h1>JavaScript Underscore.js</h1>
+<pre>
+<script>
+
+  document.writeln("a:");
+  var a = [1,2,3,4];
+  
+  function print(a) {
+    _.each(a, function(e) {
+      document.writeln(e);
+    });
+  }
+  
+  print(a);
+  
+  document.writeln("\n\nb:");
+  
+  var b = _.map(a, function(a) {
+    return a * a;
+  });
+  
+  print(b);
+</script>
+</pre>
+</body>
+</html>
