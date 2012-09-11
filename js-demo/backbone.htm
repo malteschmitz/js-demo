@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Backbone</title>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="libs/backbone.localStorage.js"></script>
+    <script src="backbone.js"></script>
+  </head>
+  <body>
+    <h1>Backbone</h1>
+    <p>Vorname: <input type="text" id="given_name"></p>
+    <p>Nachname: <input type="text" id="last_name"></p>
+    <p><button id="create">Anlegen</button></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Vorname</th>
+          <th>Nachname</th>
+          <th>Aktion</th>
+        </tr>
+      </thead>
+      <tbody id="main"></tbody>
+    </table>
+    <script type="text/template" id="row-template">
+      <td><%= customer.escape('given_name') %></td>
+      <td><%= customer.escape('last_name') %></td>
+      <td><a href="#" class="delete">Löschen</a></td>
+    </script>
+  </body>
+</html>
