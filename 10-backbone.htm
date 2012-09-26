@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js-demo: 10. Backbone.js</title>
+<script src="libs/jquery.js"></script>
+<script src="libs/underscore.js"></script>
+<script src="libs/backbone.js"></script>
+<script src="libs/backbone.localStorage.js"></script>
+<script src="10-backbone.js"></script>
+</head>
+<body>
+<h1>js-demo: 10. Backbone.js</h1>
+<fieldset id="create">
+  <legend>new customer</legend>
+  <p><strong>given name</strong><br><input type="text" class="given_name"></p>
+  <p><strong>last name</strong><br><input type="text" class="last_name"></p>
+  <p><button>create</button></p>
+</fieldset>
+<table>
+  <thead>
+    <tr>
+      <th>given name</th>
+      <th>last name</th>
+      <th>operation</th>
+    </tr>
+  </thead>
+  <tbody id="main"></tbody>
+</table>
+<script type="text/template" id="row-template">
+  <td><%= customer.escape('given_name') %></td>
+  <td><%= customer.escape('last_name') %></td>
+  <td><button class="delete">delete</button></td>
+</script>
+</body>
+</html>

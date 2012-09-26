@@ -5,7 +5,7 @@ $(function() {
   	counter: 0,
   	clickHandler: function() {
   		this.counter++;
-  		this.log.html('Anzahl Clicks: ' + this.counter);
+  		this.log.html('number of clicks: ' + this.counter);
   		return false;
   	}
   };
@@ -28,12 +28,12 @@ $(function() {
   	return {
   		dblclickHandler: function() {
   			counter++;
-  			this.log.html('Anzahl Dblclicks: ' + counter);
+  			this.log.html('number of double clicks: ' + counter);
   			return false;
   		}
   	}
   }());
-  bar.log = $('<p>hier auch nix los</p>');
+  bar.log = $('<p>nothing to see here, too</p>');
   $('#log').after(bar.log);
   
   h1.dblclick($.proxy(bar.dblclickHandler, bar));

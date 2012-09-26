@@ -1,4 +1,4 @@
-define(['jquery', 'text!template.txt'], function($, template) {
+define(['jquery', 'text!09-template.txt'], function($, template) {
 	var app = {
 		initialize: function() {
 			var that = this;

@@ -11,7 +11,7 @@ require.config({
 require([
   'jquery',
   // load app module and pass it to our definition function
-  'app'
+  '09-app'
   ], function($,app){
     $(function() {
       app.initialize();
